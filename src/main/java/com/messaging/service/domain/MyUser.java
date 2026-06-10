@@ -23,7 +23,7 @@ import static lombok.AccessLevel.PROTECTED;
 @NoArgsConstructor(access = PROTECTED)
 @AllArgsConstructor
 @Builder
-public class User {
+public class MyUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
