@@ -1,6 +1,6 @@
 package com.messaging.service.api;
 
-import com.messaging.service.api.exception.RecepientNotFoundException;
+import com.messaging.service.api.exception.RecipientNotFoundException;
 import com.messaging.service.api.exception.SelfMessageException;
 import com.messaging.service.api.exception.ServiceErrorResponse;
 import com.messaging.service.api.exception.UsernameTakenException;
@@ -38,8 +38,8 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(new ServiceErrorResponse("BAD_CREDENTIALS", exception.getMessage()));
     }
 
-    @ExceptionHandler(RecepientNotFoundException.class)
-    ResponseEntity<ServiceErrorResponse> handleRecipientNotFound(RecepientNotFoundException exception) {
+    @ExceptionHandler(RecipientNotFoundException.class)
+    ResponseEntity<ServiceErrorResponse> handleRecipientNotFound(RecipientNotFoundException exception) {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ServiceErrorResponse("RECIPIENT_NOT_FOUND", exception.getMessage()));
     }
     @ExceptionHandler(SelfMessageException.class)
