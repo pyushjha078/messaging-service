@@ -45,7 +45,7 @@ dependencies {
     annotationProcessor      'org.mapstruct:mapstruct-processor:1.5.5.Final'
 
     // API docs
-    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.3'
 
     // Testing
     testImplementation 'org.springframework.boot:spring-boot-starter-test'

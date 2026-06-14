@@ -1,6 +1,5 @@
 package com.messaging.service.service;
 
-
 import com.messaging.service.api.dto.AuthResponse;
 import com.messaging.service.domain.MyUser;
 import com.messaging.service.repository.UserRepository;

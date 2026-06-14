@@ -68,6 +68,6 @@ public class MessageService {
     }
 
     private MessageResponse toResponse(Message msg){
-        return  new MessageResponse(String.valueOf(msg.getId()),msg.getConversationId(),msg.getSenderId(),msg.getBody(),msg.getCreatedAt());
+        return new MessageResponse(String.valueOf(msg.getId()),msg.getConversationId(),msg.getSenderId(),msg.getBody(),msg.getCreatedAt());
     }
 }
